@@ -1,0 +1,75 @@
+SPRING STS
+Cubre todo el aspecto de desarrollo en java
+
+Nos bajamos el ultimo sts en la pagina web
+
+Lanzamos la consola
+nos vamos a descargas
+tar -xvzf nombre del tar
+ls
+cd sts-bundle/
+ls 
+cd sts-3.9.2.RELEASE/
+ls
+export SWT_GTK3=0
+./STS
+
+history
+
+
+ES un eclipse con plugins preinstalados
+
+CREAR UN RPOYECTO NUEVO
+FILE NEW SPRING STARTER PROYECT
+Utiliza MAven
+GRupo: nombre del grupo : es.ucm
+Artefacto: ejemploIW
+package: es.ucm.iw
+
+Seleccionar libreria:
+COre:
+-SEcurity será importante más adelante pero no activarlo
+-Lombok. SImplifica getter y setters
+-Session se marca, pero no era broma
+-Cache la comenta pero no marca
+
+I/O:
+-MAil permite enviar y recibit correos
+
+MARCAR WEBBBBBBBBBBBBBBBBBBB
+
+BOTON DERECHO EN DEMO Y RUN AS SPRING BOOT APP
+
+PODEOS LEER LA CONSOLAAAAAAAAAAA
+
+http://localhost:8080/
+
+AÑadir nueva clase en src/main/jave -> es.ucm.iw
+homeCOntroller.java y el codigo pues ya lo copio en spring
+
+
+
+PAso 1. Tener STS Sescargado e instalado (3.9.2 64 bits linux)
+-buscar "download sts"
+-descargar version correcta
+-tar -xvzf nombre del tar
+
+2. EXPORT Swt_gtk3=0
+
+3. git clone https://github.com/manuel-freire/iw-base
+
+5. desde Eclipse, importar el proyecto como
+-import existing maven project
+
+*En entornos LInux, seleccionar algo lo "copia", y click boton-del-medio lo pega
+
+http://localhost:8080/login
+
+USarios por defecto:
+
+6. LAnzar aplicacion
+"a", "aa" es usuario
+"b", "bb" es usario y administrador
+
+SI vamos al controlador y añadimos un nuevo mapping creamos nuevas vistas
+LA notacion ${s} es estatica o no se que mierda

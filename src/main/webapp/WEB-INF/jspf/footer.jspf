@@ -1,0 +1,12 @@
+<%@ page pageEncoding="UTF-8"%>
+</div><!-- /.container -->
+          
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="${s}/js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="${s}/js/bootstrap.min.js"></script>
+    <button type="submit" name="submit2" value="Enviar form.">
+				<img src="img/check.png" /> Enviar
+	</button>
+  </body>
+</html>
