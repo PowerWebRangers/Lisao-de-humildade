@@ -6,8 +6,6 @@
 <body>
 <h1>Leçiao de humildade</h1>
 
-Este es un leeme.html de ejemplo, pensado para que lo modifiques para tu proyecto. Cambia el encabezado (h1), y lista los integrantes de tu grupo, y en general actualízalo para hacerlo tuyo.
-
 <h2>Integrantes</h2>
 
 <ul>
@@ -23,34 +21,40 @@ Copia y pega aquí el texto de la última versión de proyecto.
 
 <h2>Comentarios al profesor</h2>
 
-No hemos tenido tiempo de implementar cosas como fondos, limpieza de código y alguna implementación que podría mejorarse. Queda la vista de "Luchar" por implementar, y la vista de "Seleccionar hechizos".
+<p>No hemos tenido tiempo de implementar cosas como fondos, pop-ups, limpieza de código y alguna implementación que podría mejorarse.</p> 
+<p>Queda la vista de "Luchar" por implementar, y la vista de "Seleccionar hechizos".</p>
+<p>Hemos tenido un problema de última hora y la vista de inicio no carga las imágenes.</p>
+<p>Hay vistas del proyecto base que hemos dejado como referencia, se borrarán en próximas entregas</p>
+<p>Hay recursos que no utilizamos, tenemos que limpiar las carpetas</p>
+<p>Tenemos que estructurar mejor las hojas de estilo, no debemos cargar todas en el header</p>
+<p>Lo mismo pasa con el footer, tenemos todos los scripts que utilizamos</p>
 
 <h2>Vistas</h2>
 
--Home: Aquí hemos hecho implementado la página a modo de presentación del juego definiendo qué es lo que puede hacer el usuario dentro de este. http://localhost:8080/inicio
-
--Tienda: Aquí tenemos una lista de objetos que el usuario puede comprar, con su descripción y su precio.
- http://localhost:8080/tienda
-
--Overview: Aquí podemos ver la información sobre el usuario, el inventario de hechizos e información sobre los personajes que tiene. http://localhost:8080/overview
-
--CreaPersonaje: En esta vista el usuario puede establecer los atributos y ver las estadísticas del personaje. (aunque aún no es funcional)
-http://localhost:8080/creaPersonaje
-
--InicioS
-
-Detalla aquí tus vistas. Usa enlaces a localhost:8080/ (SIN nombre de proyecto; correspondientes a arrancar la aplicación en modo spring-boot desde STS) para enlazar cada vista.
 <ul>
-    <li><a href="localhost:8080/">vista principal</a> - descripción muy corta de la vista
+    <li><a href="localhost:8080/inicio">Inicio</a> - Aquí hemos implementado la página a modo de presentación del juego definiendo qué es lo que puede hacer el usuario dentro de este.
+    <li><a href="localhost:8080/overview">Overview</a> - Aquí podemos ver la información sobre el usuario, el inventario de hechizos e información sobre los personajes que tiene.
+    <li><a href="localhost:8080/tienda">Tienda</a> - Aquí tenemos una lista de objetos que el usuario puede comprar, con su descripción y su precio.
+    <li><a href="localhost:8080/estadisticas">Estadísticas</a> - En esta vista se muestra un listado de los usuarios y sus estadísticas. No es funcional.
+    <li><a href="localhost:8080/inicioSesion">Inicio sesión</a> -  Es un login en el que se pide nombre y contraseña, no es funcional, el botón lleva a overview.
+    <li><a href="localhost:8080/crearPersonaje">Crear personaje</a> - En esta vista el usuario puede establecer los atributos y ver las estadísticas del personaje. (aunque aún no es funcional)
+   <li><a href="localhost:8080/registro">Registro</a> - Esta vista pide al usuario nombre, contraseña y email. No es funcional, el botón lleva a overview.
 </ul>
 
 <h2>Recursos</h2>
 
 Esto es un listado de todos los recursos externos utilizados (es decir: no escritos por los desarrolladors ni incluidos en la plantilla del profesor).
 
+
 <ul>
-    <li><a href="localhost:8080/spring.jpg">imagen de primavera</a> (<a href="https://en.wikipedia.org/wiki/Spring_(season)#/media/File:Camino_entre_el_bosque_de_cerezos_en_flor.jpg">
-            CC-BY-SA</a>) - usada para logotipo
+     <li>Todas las imágenes de hechizos se han sacado de la página OpenGameArt (<a href="https://opengameart.org/content/painterly-spell-icons-part-1">
+
+     CC-BY 3.0 CC-BY-SA 3.0 GPL 3.0 GPL 2.0</a>) Autor: J.W. Bjerk  
+
+    <li>La imagen que representa el avatar de usuario y de los personajes también está sacada de OpenGameArt (<a href="https://opengameart.org/content/game-character">
+
+     CC0</a>)
+        
     <li><a href="https://code.jquery.com/jquery-3.1.1.min.js">JQuery</a> (<a href="https://jquery.org/license/">MIT/Apache</a>) - librería js para simplificar la aplicación de comportamientos		
 </ul>
 </body>
