@@ -23,12 +23,26 @@
     
     <!-- Bootstrap -->
     <link href="${s}/css/bootstrap.min.css" rel="stylesheet">
+    <link href="${s}/css/bootstrap-theme.min.css" rel="stylesheet"> 
+   
     <link href="${s}/css/starter-template.css" rel="stylesheet">
     <link href="${s}/css/navbar.css" rel="stylesheet">
-    <!-- <link href="../dist/css/bootstrap-theme.min.css" rel="stylesheet"> -->
+    
+     <link href="../css/registro.css" rel="stylesheet">
+     
+     <!-- HOME -->
+     <link href="../css/homeCSS.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Freckle+Face|Fredericka+the+Great|MedievalSharp|Tangerine|UnifrakturMaguntia" rel="stylesheet">
+      
+       <!-- Overview-->
+      <link href="../css/overview.css" rel="stylesheet">
+      
+        <!-- inicioSesion-->
+       <link href="../css/signin.css" rel="stylesheet">
   </head>
   <body>
   
+      <div class="container">
    		<nav class="navbar navbar-default">
               <div class="container-fluid">
                 <div class="navbar-header">
@@ -38,14 +52,14 @@
                       <span class="icon-bar"></span>
                       <span class="icon-bar"></span>
                   </button>
-                  <a class="navbar-brand" href="/Home">Liçao de humildade</a>
+                  <a class="navbar-brand" href="/inicio">Liçao de humildade</a>
                 </div>
               <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                      <li><a href="/Overview">Perfil</a></li>
-                      <li><a href="/Tienda">Tienda</a></li>
-                      <li><a href="/Jugar">Luchar</a></li>
-                      <li><a href="/Estadisticas">Estadísticas</a></li>
+                      <li><a href="/overview">Perfil</a></li>
+                      <li><a href="/tienda">Tienda</a></li>
+                      <li><a href="/jugar">Luchar</a></li>
+                      <li><a href="/estadisticas">Estadísticas</a></li>
 
                       <!-- MENU DESPLEGABLE -->
                       <!--
@@ -65,8 +79,8 @@
 
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                      <li class="active"><a href="/Registro">Registrarse</a></li>
-                      <li><a href="/InicioSesion">Inicia Sesión</a></li>
+                      <li class="active"><a href="/registro">Registrarse</a></li>
+                      <li><a href="/inicioSesion">Inicia Sesión</a></li>
                     </ul>
                   </div><!--/.nav-collapse -->
               </div><!--/.container-fluid -->
@@ -96,4 +110,5 @@
       </div>
     </nav>
 -->
+</div>
     <div class="container">

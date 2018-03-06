@@ -28,6 +28,31 @@ public class RootController {
 		return "tienda";    // <--- nombre de vista, sin .jsp
 	}
 	
+	@GetMapping("/estadisticas")   // <--- asocia URL con funcion
+	public String estadisticas() {   //  <--- nombre funcion da igual
+		return "estadisticas";    // <--- nombre de vista, sin .jsp
+	}
+	
+	@GetMapping("/inicio")   // <--- asocia URL con funcion
+	public String inicio() {   //  <--- nombre funcion da igual
+		return "inicio";    // <--- nombre de vista, sin .jsp
+	}
+	
+	@GetMapping("/overview")   // <--- asocia URL con funcion
+	public String overview() {   //  <--- nombre funcion da igual
+		return "overview";    // <--- nombre de vista, sin .jsp
+	}
+	
+	@GetMapping("/registro")   // <--- asocia URL con funcion
+	public String registro() {   //  <--- nombre funcion da igual
+		return "registro";    // <--- nombre de vista, sin .jsp
+	}
+	
+	@GetMapping("/crearPersonaje")   // <--- asocia URL con funcion
+	public String crearPersonaje() {   //  <--- nombre funcion da igual
+		return "crearPersonaje";    // <--- nombre de vista, sin .jsp
+	}
+	
 	@GetMapping({"/", "/index"})
 	public String root(Model model, Principal principal) {
 		log.info(principal.getName() + " de tipo " + principal.getClass());		
