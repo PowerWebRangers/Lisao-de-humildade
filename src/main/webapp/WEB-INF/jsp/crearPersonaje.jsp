@@ -137,7 +137,7 @@
                 <div class="row">
                   <div class="col-md-3 col-xs-4"> Vitalidad </div>
 
-                  <div class="col-md-4 col-xs-8"> 
+                  <div class="col-md-5 col-xs-8"> 
 
                     <!--minus and plus -->
                     <div class="center">
@@ -165,7 +165,7 @@
                 <div class="row">
                   <div class="col-md-3 col-xs-4"> Mana </div>
 
-                  <div class="col-md-4 col-xs-8"> 
+                  <div class="col-md-5 col-xs-8"> 
 
                     <!--minus and plus -->
                     <div class="center">
@@ -193,7 +193,7 @@
                 <div class="row">
                   <div class="col-md-3 col-xs-4"> Fuerza </div>
 
-                  <div class="col-md-4 col-xs-8"> 
+                  <div class="col-md-5 col-xs-8"> 
 
                     <!--minus and plus -->
                     <div class="center">
@@ -220,7 +220,7 @@
                 <div class="row">
                   <div class="col-md-3 col-xs-4"> Inteligencia </div>
 
-                  <div class="col-md-4 col-xs-8"> 
+                  <div class="col-md-5 col-xs-8"> 
 
                     <!--minus and plus -->
                     <div class="center">
@@ -247,7 +247,7 @@
                 <div class="row">
                   <div class="col-md-3 col-xs-4"> Velocidad </div>
 
-                  <div class="col-md-4 col-xs-8"> 
+                  <div class="col-md-5 col-xs-8"> 
 
                     <!--minus and plus -->
                     <div class="center">
@@ -274,7 +274,7 @@
                 <div class="row">
                   <div class="col-md-3 col-xs-4"> Armadura </div>
 
-                  <div class="col-md-4 col-xs-8"> 
+                  <div class="col-md-5 col-xs-8"> 
 
                     <!--minus and plus -->
                     <div class="center">
@@ -308,7 +308,7 @@
             <div class="row">
                   <div class="col-md-7 col-xs-7">  </div>
                   <div class="col-md-3 col-xs-3">
-                    <a  href="./Overview.html" role="button"> <button type="button" class="btn btn-lg btn-primary btn-block">Crear</button> </a>
+                    <a  href="/overview" role="button"> <button type="button" class="btn btn-lg btn-primary btn-block">Crear</button> </a>
                   </div>
  
             </div>
@@ -317,7 +317,6 @@
 
         </div>
         
-      <!-- Scripts propios -->
-      <script src="../js/crearPersonaje.js"> </script>
+
       
 <%@ include file="../jspf/footer.jspf"%>

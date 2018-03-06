@@ -6,6 +6,7 @@
 
 <%@ include file="../jspf/header.jspf"%>
 
+
       <div class="page-header">
         <h1>Tienda</h1>
       </div>

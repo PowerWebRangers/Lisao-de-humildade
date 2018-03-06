@@ -38,6 +38,11 @@ public class RootController {
 		return "inicio";    // <--- nombre de vista, sin .jsp
 	}
 	
+	@GetMapping("/inicioSesion")   // <--- asocia URL con funcion
+	public String inicioSesion() {   //  <--- nombre funcion da igual
+		return "inicioSesion";    // <--- nombre de vista, sin .jsp
+	}
+	
 	@GetMapping("/overview")   // <--- asocia URL con funcion
 	public String overview() {   //  <--- nombre funcion da igual
 		return "overview";    // <--- nombre de vista, sin .jsp

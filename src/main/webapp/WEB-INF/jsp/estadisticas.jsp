@@ -6,6 +6,8 @@
 
 <%@ include file="../jspf/header.jspf"%>
 
+        <div class="panel panel-default">
+            <div class="panel-body"> 
     <div class="container-fluid">
       <h1 class="page-header">Clasificación</h1>
           <div class="table-responsive">
@@ -135,6 +137,8 @@
               </tbody>
             </table>
           </div>
+    </div>
+    </div>
 
     </div>
 

@@ -6,24 +6,15 @@
 
 <%@ include file="../jspf/header.jspf"%>
 
-<script>
-    $(document).ready(function(){
-      $(".imagenes img").click(function(){
-        $("#texto").html($(this).attr("title"));
-      });
-    });
-  </script>
-
-
-<div class="panel panel-default">
+ <div class="panel panel-default">
           <div class="panel-body"><!--PANEL BODY-->
             <h3>Información Usuario:</h3>
             <br>
               <img class="spriteCharacter" src="${s}/img/pruebaPsj.png" style="float:left; margin:10px;" >
               <br>
-              <p>Nombre: Carlos</p>
+              <h4>Nombre: Carlos</h4>
               <br>
-              <p>Nivel 26</p>
+              <h4>Nivel 26</h4>
               
               <a href="/crearPersonaje" role="button"><button type="button" class="btn btn-success botonCreaPerfil">Crear Perfil</button></a>
               <br>
@@ -47,50 +38,48 @@
                                   <div class="item active">
                                   <div class="container">
 
-                                    <!-- Indicators -->
                      
+                                <!--IMÁGENES-->
 
-                                <div><img class="imagenHechizo" src="${s}/img/espada.png" style="float:left; margin:10px;" title = "Ataque ++<br><br> Habilidad que aumenta el ataque del usuario +30 durante la batalla."></div>
-
-
-
-                                <div><img class="imagenHechizo" src="${s}/img/bolaVeneno.png" style="float:left; margin:10px;" title = "Veneno<br><br> Habilidad que provoca el estado veneno en el enemigo. Reduce los puntos de vida cada turno."></div>
-
-
-                                 <div><img class="imagenHechizo" src="${s}/img/evasion.png" style="float:left; margin:10px;" title = "Evasion <br><br> Habilidad que provoca el estado evasion al usuario. Reduce la posibilidad de ser golpeado." ></div>
+                                <div><img class="imagenHechizo" src="${s}/img/espada.png" style="float:left; margin:10px;" title = "<h4>Ataque ++</h4><br><br> Habilidad que aumenta el ataque del usuario +30 durante la batalla."></div>
 
 
 
-                                 <div><img class="imagenHechizo" src="${s}/img/cura.png" style="float:left; margin:10px;"   title = "Cura <br><br> Habilidad que recupera +30 puntos de vida al usuario."></div>
+                                <div><img class="imagenHechizo" src="${s}/img/bolaVeneno.png" style="float:left; margin:10px;" title = "<h4>Veneno</h4><br><br> Habilidad que provoca el estado veneno en el enemigo. Reduce los puntos de vida cada turno."></div>
+
+
+                                 <div><img class="imagenHechizo" src="${s}/img/evasion.png" style="float:left; margin:10px;" title = "<h4>Evasión</h4> <br><br> Habilidad que provoca el estado evasion al usuario. Reduce la posibilidad de ser golpeado." ></div>
+
+
+
+                                 <div><img class="imagenHechizo" src="${s}/img/cura.png" style="float:left; margin:10px;"   title = "<h4>Cura</h4> <br><br> Habilidad que recupera +30 puntos de vida al usuario."></div>
 
                                   </div>
                                 </div>
 
                                  <div class="item">
                                   <div class="container">
-
-                                    <!-- Indicators -->
                      
 
-                                <div><img class="imagenHechizo" src="${s}/img/bolaHielo.png" style="float:left; margin:10px;" title = "Hielo<br><br> Habilidad que congela al enemigo durante un turno."></div>
+                                <div><img class="imagenHechizo" src="${s}/img/bolaHielo.png" style="float:left; margin:10px;" title = "<h4>Hielo</h4><br><br> Habilidad que congela al enemigo durante un turno."></div>
 
 
 
-                                <div><img class="imagenHechizo" src="${s}/img/espadaVeneno.png" style="float:left; margin:10px;" title = "Espada Veneno<br><br> Habilidad que provoca el estado veneno en el enemigo. Reduce los puntos de vida cada turno e inflinge 20 puntos de daño."></div>
+                                <div><img class="imagenHechizo" src="${s}/img/espadaVeneno.png" style="float:left; margin:10px;" title = "<h4>Espada Veneno</h4><br><br> Habilidad que provoca el estado veneno en el enemigo. Reduce los puntos de vida cada turno e inflinge 20 puntos de daño."></div>
 
 
-                                 <div><img class="imagenHechizo" src="${s}/img/velocidad.png" style="float:left; margin:10px;" title = "Velocidad <br><br> Habilidad que aumenta la iniciativa +10 puntos." ></div>
+                                 <div><img class="imagenHechizo" src="${s}/img/velocidad.png" style="float:left; margin:10px;" title = "<h4>Velocidad++</h4> <br><br> Habilidad que aumenta la iniciativa +10 puntos." ></div>
 
 
 
-                                 <div><img class="imagenHechizo" src="${s}/img/esna.png" style="float:left; margin:10px;"   title = "Esna <br><br> Habilidad que cura cualquier estado alterado."></div>
+                                 <div><img class="imagenHechizo" src="${s}/img/esna.png" style="float:left; margin:10px;"   title = "<h4>Esna</h4> <br><br> Habilidad que cura cualquier estado alterado."></div>
 
                                   </div>
                                 </div>
 
 
 
-
+                              
 
                               </div>
                               <br>
@@ -99,11 +88,11 @@
                               <li class="next"><a href="#myCarousel" data-slide-to="1">Siguiente &rarr;</a></li>
                               </ul>
                             
-                            </div>
+                            </div><!--IMÁGENES-->
                     
 
 
-                            </div><!--IMAGENES-->
+                            </div>
 
                         </div>
                       </div>
@@ -128,13 +117,13 @@
                 </div><!--FILA-->
                 <div class=" panel panel-default">
                     <div class="panel-body">
-                        <h3>Información Jugador 1</h3>
+                        <h3>Información Jugador 1:</h3>
                         <br>
                         <img class= "spritePlayer" src="${s}/img/pruebaPsj.png" style="float:left; margin:10px;" >
                         <br>
-                        <p>Jugador: John</p>
+                        <h4>Jugador: John</h4>
                         <br>
-                        <p>Nivel EXP: 30</p>
+                        <h4>Nivel EXP: 30</h4>
                         <br>
                         <br>
                         <br>
@@ -167,13 +156,13 @@
               <!--JUGADOR 2-->
               <div class=" panel panel-default">
                     <div class="panel-body">
-                        <h3>Información Jugador 2</h3>
+                        <h3>Información Jugador 2:</h3>
                         <br>
                         <img class= "spritePlayer" src="${s}/img/pruebaPsj.png" style="float:left; margin:10px;" >
                         <br>
-                        <p>Jugador: Anne</p>
+                        <h4>Jugador: Anne</h4>
                         <br>
-                        <p>Nivel EXP: 70</p>
+                        <h4>Nivel EXP: 70</h4>
                         <br>
                         <br>
                         <br>
@@ -205,13 +194,13 @@
                       <!--JUGADOR 3-->
               <div class=" panel panel-default">
                     <div class="panel-body">
-                        <h3>Información Jugador 3</h3>
+                        <h3>Información Jugador 3:</h3>
                         <br>
                         <img class= "spritePlayer" src="${s}/img/pruebaPsj.png" style="float:left; margin:10px;" >
                         <br>
-                        <p>Jugador: Lin</p>
+                        <h4>Jugador: Lin</h4>
                         <br>
-                        <p>Nivel EXP: 56</p>
+                        <h4>Nivel EXP: 56</h4>
                         <br>
                         <br>
                         <br>

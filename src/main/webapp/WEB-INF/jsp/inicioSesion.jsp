@@ -18,7 +18,7 @@
           </label>
         </div>
          <!-- TYPE DEBERÍA SER submit para cuando tengamos bases de datos -->
-          <a  href="./Overview.html" role="button">   <button class="btn btn-lg btn-primary btn-block" type="button">Entrar</button></a>
+          <a  href="/overview" role="button">   <button class="btn btn-lg btn-primary btn-block" type="button">Entrar</button></a>
       </form>
 
 <%@ include file="../jspf/footer.jspf"%>

@@ -30,7 +30,7 @@
                 <div class="form-group">
                     <div class="col-sm-9 col-sm-offset-3">
                       <!-- TYPE DEBERÍA SER submit para cuando tengamos bases de datos -->
-                        <a  href="./Overview.html" role="button"> <button type="button" class="btn btn-primary btn-block">Registrarse</button> </a>
+                        <a  href="/overview" role="button"> <button type="button" class="btn btn-primary btn-block">Registrarse</button> </a>
                     </div>
                 </div>
             </form> <!-- /form -->
