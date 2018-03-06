@@ -9,5 +9,4 @@
 <div class="starter-template">
 	<h1>Home</h1>
 	<p class="lead">Hola</p>
-<p>puta </p>
 </div>

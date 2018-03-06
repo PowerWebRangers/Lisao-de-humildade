@@ -23,6 +23,11 @@ public class RootController {
 		return "hola";    // <--- nombre de vista, sin .jsp
 	}
 
+	@GetMapping("/tienda")   // <--- asocia URL con funcion
+	public String tienda() {   //  <--- nombre funcion da igual
+		return "tienda";    // <--- nombre de vista, sin .jsp
+	}
+	
 	@GetMapping({"/", "/index"})
 	public String root(Model model, Principal principal) {
 		log.info(principal.getName() + " de tipo " + principal.getClass());		

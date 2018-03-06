@@ -1,0 +1,57 @@
+
+.bgg{
+background-image: URL("../images/bg-home.jpg");
+min-height: 600px;
+color: #FFF;
+background-size: cover; !important
+}
+.jumbotron{
+  background-color:inherit;
+}
+.gameFacts {
+  padding-top:15px;
+  min-height: 400px;
+  height: auto;
+  background-image: url("../images/placeholder.jpg");
+  background-size: cover;
+}
+.borders{
+    border-bottom: 5px solid #c3a568;
+}
+.border-left {
+border-left: 3px solid #c3a568;
+}
+.border-right{
+border-right: 3px solid #c3a568;
+}
+.title{
+  font-family:MedievalSharp, bold;
+}
+
+#gf1 {
+background-color: #fff;
+}
+
+#gf2 {
+  background-color: #faf
+}
+
+#gf3 {
+
+}
+body{
+  background-color: black;
+}
+p {
+  font-family: verdana;
+}
+
+.a {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  padding: 25px;
+  text-align: center;
+
+}

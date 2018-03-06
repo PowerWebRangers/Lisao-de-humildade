@@ -1,21 +1,6 @@
 SPRING STS
 Cubre todo el aspecto de desarrollo en java
 
-Nos bajamos el ultimo sts en la pagina web
-
-Lanzamos la consola
-nos vamos a descargas
-tar -xvzf nombre del tar
-ls
-cd sts-bundle/
-ls 
-cd sts-3.9.2.RELEASE/
-ls
-export SWT_GTK3=0
-./STS
-
-history
-
 
 ES un eclipse con plugins preinstalados
 
@@ -49,19 +34,23 @@ homeCOntroller.java y el codigo pues ya lo copio en spring
 
 
 
-PAso 1. Tener STS Sescargado e instalado (3.9.2 64 bits linux)
--buscar "download sts"
--descargar version correcta
+PAso 1.Descargar STS del drive
 -tar -xvzf nombre del tar
+-cd sts-bundle/
+-cd sts-3.9.2.RELEASE/
 
-2. EXPORT Swt_gtk3=0
+2. export SWT_GTK3=0
+	./STS lo abre
 
-3. git clone https://github.com/manuel-freire/iw-base
+3. git clone nuestro repo
 
-5. desde Eclipse, importar el proyecto como
+4. desde Eclipse, importar el proyecto como
 -import existing maven project
 
 *En entornos LInux, seleccionar algo lo "copia", y click boton-del-medio lo pega
+
+Para ejecutar el servidor:
+BOTON DERECHO EN DEMO Y RUN AS SPRING BOOT APP
 
 http://localhost:8080/login
 
@@ -73,3 +62,5 @@ USarios por defecto:
 
 SI vamos al controlador y añadimos un nuevo mapping creamos nuevas vistas
 LA notacion ${s} es estatica o no se que mierda
+
+En securityCOnfig.java quitar la cosa comentada que permite navegar por todo sin admin user y eso
