@@ -13,7 +13,7 @@
           <div class="row placeholders">
             <div class="col-xs-6 col-sm-3 placeholder ">
              
-              <img class = "img-thumbnail" src="${s}/img/fireball-red-3.png" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">      
+              <img class = "img-thumbnail" src="${s}/img/bolaFuego.png" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">      
 
               <h4>Bola de fuego</h4>
               <span class="text-muted">         

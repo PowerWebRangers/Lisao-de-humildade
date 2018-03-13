@@ -8,7 +8,7 @@
 	 <script src="${s}/js/docs.min.js"></script> 
 	 
 	  <!-- Scripts propios -->
-      <script src="${s}/js/crearPersonaje.js"> </script>ç
+      <script src="${s}/js/crearPersonaje.js"> </script>
       <script src="${s}/js/overview.js"></script>
   </body>
 </html>
