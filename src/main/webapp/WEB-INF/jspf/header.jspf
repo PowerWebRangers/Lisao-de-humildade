@@ -58,7 +58,7 @@
                     <ul class="nav navbar-nav">
                       <li><a href="/overview">Perfil</a></li>
                       <li><a href="/tienda">Tienda</a></li>
-                      <li><a href="/jugar">Luchar</a></li>
+                      <li><a href="/juego">Luchar</a></li>
                       <li><a href="/estadisticas">Estadísticas</a></li>
 
                       <!-- MENU DESPLEGABLE -->

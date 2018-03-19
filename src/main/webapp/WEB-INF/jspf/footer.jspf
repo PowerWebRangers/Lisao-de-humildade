@@ -10,5 +10,7 @@
 	  <!-- Scripts propios -->
       <script src="${s}/js/crearPersonaje.js"> </script>
       <script src="${s}/js/overview.js"></script>
+              <script src="${s}/js/rpg.js"></script>
+    <script src="${s}/js/main.js"></script>
   </body>
 </html>

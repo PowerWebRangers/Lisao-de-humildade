@@ -58,6 +58,11 @@ public class RootController {
 		return "crearPersonaje";    // <--- nombre de vista, sin .jsp
 	}
 	
+	@GetMapping("/juego")   // <--- asocia URL con funcion
+	public String juego() {   //  <--- nombre funcion da igual
+		return "juego";    // <--- nombre de vista, sin .jsp
+	}
+	
 	@GetMapping({"/", "/index"})
 	public String root(Model model, Principal principal) {
 		log.info(principal.getName() + " de tipo " + principal.getClass());		
