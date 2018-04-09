@@ -6,8 +6,9 @@
 
 <%@ include file="../jspf/header.jspf"%>
 
-  <!-- HOME TITLE -->
-    <div class ="row">
+
+ <!-- Jombotron con titulo -->
+ <div class ="row">
       <div class ="container-fluid borders bgg">
         <div class = "jumbotron transparent">
           <div class ="row">
@@ -19,7 +20,7 @@
       </div>
     </div>
 
-    <!-- FACTS ABOUT THE GAME -->
+    <!-- Boton Jugar -->
     <div class="row top-buffer">
       <div class="col-lg-3">
       </div>
@@ -31,6 +32,8 @@
       <div class="col-lg-3">
       </div>
     </div>
+    
+    <!-- Game facts -->
     <div class="row top-buffer">
       <div class = "col-xs-1">
       </div>
@@ -52,15 +55,16 @@
             <h1 class="text-center gameFact-title">Demuestra que eres el mejor</h1>
             <p class=" top-buffer text-center gamefact-text">Escala los rankings y llega a ser el</p>
             <p class ="text-center gamefact-text"> <span id ="humilde">más humilde</span></p>
+
           </div>
           </div>
         </div>
       <div class = "col-xs-1">
       </div>
     </div>
-     <!-- Navigation Bar -->    
-     
-     
+
+    <!-- BARRA DE NAVEGACIÓN -->
+
 <%@ include file="../jspf/footer.jspf"%>
 
 

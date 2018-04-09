@@ -28,6 +28,7 @@ public class IwUserDetailsService implements UserDetailsService {
 	        User u = entityManager.createQuery("from User where login = :login", User.class)
 	                            .setParameter("login", username)
 	                            .getSingleResult();
+	        
 	        // build UserDetails object
 	        ArrayList<SimpleGrantedAuthority> roles = new ArrayList<>();
 	        for (String r : u.getRoles().split("[,]")) {
