@@ -21,28 +21,25 @@
 
     <link rel="icon" href="${s}/img/imagen.jpg"> 
     
+    
+    	<!-- OWN CSS AND STYLES INCLUSION -->  
+    <link href="${s}/css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Freckle+Face|Fredericka+the+Great|Permanent+Marker|Ruslan+Display|MedievalSharp|Tangerine|UnifrakturMaguntia" rel="stylesheet">      
+    
+    
     <!-- Bootstrap -->
     <link href="${s}/css/bootstrap.min.css" rel="stylesheet">
     <link href="${s}/css/bootstrap-theme.min.css" rel="stylesheet"> 
    
-    <!-- <link href="${s}/css/starter-template.css" rel="stylesheet"> -->
-    <link href="${s}/css/navbar.css" rel="stylesheet">
-    
-     <link href="${s}/css/registro.css" rel="stylesheet">
-     
-     <!-- HOME -->
-     <link href="${s}/css/homeCss.css" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Freckle+Face|Fredericka+the+Great|Permanent+Marker|Ruslan+Display|MedievalSharp|Tangerine|UnifrakturMaguntia" rel="stylesheet">      
-       <!-- Overview-->
-      <link href="${s}/css/overview.css" rel="stylesheet">
-      
-        <!-- inicioSesion-->
-       <link href="${s}/css/signin.css" rel="stylesheet">
-  </head>
-  <body class = "blue-gradient">
   
-      <div class="container">
-   		<nav class="navbar navbar-default">
+  
+
+
+  </head>
+  
+  <body class = "blue-gradient">
+      <div class="container-fluid top-buffer">
+   		<nav class="navbar navbar-default borders">
               <div class="container-fluid">
                 <div class="navbar-header">
                   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -111,4 +108,4 @@
     </nav>
 -->
 </div>
-    <div class="container">
+    <div class="container top-buffer">

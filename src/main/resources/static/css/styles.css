@@ -1,0 +1,317 @@
+/*HOJA DE ESTILOS GENERICA*/
+
+
+/*---------------------- GENERAL STYLES ----------------------*/
+
+.blue-gradient
+{
+    background: linear-gradient(#dCeCe8,#d8e8e8, #87bdd8, black);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment:fixed;
+	height:100%;
+}
+.borders{
+  border: 5px solid coral !important;
+  border-style: groove !important;
+  box-shadow: 3px 0px 8px black, -3px 0px 8px black, 0px 3px 8px black !important;
+}
+.border-right{
+border-right: 3px solid coral;
+border-right-style: groove;
+}
+.border-left{
+  border-left: 3px solid coral;
+  border-left-style: groove;
+}
+.border-top{
+  border-top: 3px solid coral;
+  border-top-style: groove;
+}
+.border-bottom
+{
+  border-bottom: 3px solid coral;
+  border-bottom-style: groove;
+}
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;background-color: #FFFFF3;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+  
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- *
+
+/* Carousel base class *
+.carousel {
+  height: 100px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption *
+.carousel-caption {
+  z-index: 10;
+}
+
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 100px;
+}
+
+
+  /* Bump up size of carousel content *
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class *
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption *
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element *
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+*/
+
+
+
+/*---------------------- HOME CSS ----------------------*/
+
+.bgg{
+  background-image: URL("../img/chess.jpg");
+  background-size: cover !important;
+  width: 100%;
+  background-position:center;
+  min-height: 370px;
+}
+.transparent{
+  background-color: inherit !important;
+}
+.main-title{
+  font-size: 130px !important;
+  font-family:MedievalSharp, bold;
+  color: yellow;
+  text-align: center;
+  color:gold !important;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+.papiro{
+  background-image: URL("../img/papiro.jpg");
+  background-size: cover; !important
+}
+.gameFact-title{
+  text-shadow: 2px 0px, 5px, red !important;
+  font-family: MedievalSharp, bold;
+  font-size: 6.5em !important;
+  color: black !important;
+}
+.gamefact-text {
+  font-family: 'Permanent Marker',cursive;
+  font-size: 2em !important;
+}
+
+.top-buffer {
+  margin-top:20px;
+}
+#playnow{
+  min-height:1em !important;
+  font-family: MedievalSharp, bold !important;
+  font-size: 4em !important;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -3px black;
+}
+
+#humilde{
+  text-shadow: -2px 0 gold, 0 2px gold, 2px 0 gold, 0 -2px gold;
+}
+
+
+/*---------------------- OVERVIEW CSS  ----------------------*/
+/**/
+
+
+/*.row {
+    display: flex;
+}*/
+
+
+.panel-overview {
+	@extend .panel;
+	@extend .panel-default;
+	background-color: #FFFFF1 !important;
+}
+.column {
+    float: left;
+    width: 50%;
+}
+
+
+.fila-overview:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.imagenHechizo {
+  height:100px;
+  width :100px;
+  border-style: groove;
+  border-width: 7px;
+  border-color: coral;
+}
+
+.spriteCharacter {
+  height:100px;
+  width :100px;
+  border-style: groove;
+  border-width: 15px;
+  border-color: coral;
+}
+.spritePlayer{
+  height:100px;
+  width :100px;
+  border-style: groove;
+  border-width: 15px;
+  border-color: blue;
+}
+
+.botonCreaPerfil{
+float: right;
+
+}
+.column {
+    float: left;
+    width: 50%;
+}
+
+
+
+/*---------------------- REGISTRO CSS  ----------------------
+*[role="form"] {
+    max-width: 530px;
+    padding: 15px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 0.3em;
+}
+
+*[role="form"] h2 {
+    margin-left: 5em;
+    margin-bottom: 1em;
+}
+
+
+/*---------------------- SIGNIN CSS  ----------------------*/
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel *
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+*/
+
+
+

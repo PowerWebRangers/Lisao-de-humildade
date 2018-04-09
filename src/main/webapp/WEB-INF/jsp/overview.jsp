@@ -6,8 +6,8 @@
 
 <%@ include file="../jspf/header.jspf"%>
 
- <div class="panel panel-default">
-          <div class="panel-body"><!--PANEL BODY-->
+ <div class="panel-overview borders container">
+          <div class=""><!--PANEL BODY-->
             <h3>Información Usuario:</h3>
             <br>
               <img class="spriteCharacter" src="${s}/img/pruebaPsj.png" style="float:left; margin:10px;" >
@@ -22,9 +22,9 @@
 
               <!--PANELES DENTRO DEL PANEL PRINCIPAL-->
               <!--PANEL 1 -->
-              <div class ="row"><!--FILA-->
+              <div class ="row fila-overview"><!--FILA-->
                       <div class="col-md-6">
-                      <div class=" panel panel-default">
+                      <div class="panel-overview">
                         <div class="panel-body">
                             <h3>Habilidades: </h3>
                             <br>
@@ -101,7 +101,7 @@
               <!--PANEL 1 -->
 
                    <div class="col-md-6">
-                  <div class=" panel panel-default">
+                  <div class=" panel panel-default container-fluid">
                     <div class="panel-body">
                         <h3>Descripción de la habilidad: </h3>
                         <br>
@@ -115,7 +115,7 @@
                 </div>
 
                 </div><!--FILA-->
-                <div class=" panel panel-default">
+                <div class=" panel panel-default container-fluid">
                     <div class="panel-body">
                         <h3>Información Jugador 1:</h3>
                         <br>
@@ -130,7 +130,7 @@
                         <h3>Estadísticas</h3>
                         <br>
 
-                        <div class ="row">
+                        <div class ="row fila-overview">
 
                           <div class="col-md-6">
                             <li>Vida: 120</li>
@@ -154,7 +154,7 @@
 
 
               <!--JUGADOR 2-->
-              <div class=" panel panel-default">
+              <div class=" panel panel-default container-fluid">
                     <div class="panel-body">
                         <h3>Información Jugador 2:</h3>
                         <br>
@@ -169,7 +169,7 @@
                         <h3>Estadísticas</h3>
                         <br>
 
-                        <div class ="row">
+                        <div class ="row fila-overview">
 
                           <div class="col-md-6">
                             <li>Vida: 240</li>
@@ -192,7 +192,7 @@
 
 
                       <!--JUGADOR 3-->
-              <div class=" panel panel-default">
+              <div class=" panel panel-default container-fluid">
                     <div class="panel-body">
                         <h3>Información Jugador 3:</h3>
                         <br>
@@ -207,7 +207,7 @@
                         <h3>Estadísticas</h3>
                         <br>
 
-                    <div class ="row">
+                    <div class ="row fila-overview">
 
                       <div class="col-md-6">
                           <li>Vida: 250</li>
