@@ -6,8 +6,9 @@
 
 <%@ include file="../jspf/header.jspf"%>
 
+<div class= "container panel-overview borders">
 
-      <div class="page-header">
+      <div class="page-header ">
         <h1>Tienda</h1>
       </div>
           <div class="row placeholders">
@@ -289,5 +290,6 @@
 
       </div>
     </div><!-- /.carousel -->
+</div> <!-- Container de la tienda -->
     
 <%@ include file="../jspf/footer.jspf"%>

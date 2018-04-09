@@ -67,7 +67,7 @@ public class RootController {
 	
 	@GetMapping("/login")
 	public String login() {
-		return "login";
+		return "inicioSesion";
 	}
 	
 	@GetMapping("/logout")

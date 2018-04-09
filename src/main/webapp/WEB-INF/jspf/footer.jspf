@@ -1,6 +1,27 @@
 <%@ page pageEncoding="UTF-8"%>
 
 </div><!-- /.container -->
+
+<footer>
+	<div class = "container pies top-buffer">
+		<div class = "footer-titulo">
+			<a class = "footer-a" href = "https://github.com/PowerWebRangers">Power Web Rangers</a>
+		</div>
+		<div class = "contact">
+			<a class = "footer-a" "mailto: webRangers@mailinator.com">Email</a>
+		</div>
+		<div class = "organizations">
+			<a class = "footer-a" href ="ucm.es">UCM</a>
+			<a class = "footer-a" href = "informatica.ucm.es">Facultad de Informática UCM</a>	
+		</div>
+	</div>
+</footer>          
+          
+          
+          
+          
+          
+          
           
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="${s}/js/jquery.min.js"></script>
