@@ -5,6 +5,8 @@ import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
 
 
 /**
@@ -29,7 +31,9 @@ public class Inventariable {
 	public void setId(long newId) {
 		this.Id = newId;
 	}
-
+	
+	@OneToMany(targetEntity=User.class)
+	@JoinColumn(name="owner_id")
 	public List<User> getPropietarios() {
 		return propietarios;
 	}

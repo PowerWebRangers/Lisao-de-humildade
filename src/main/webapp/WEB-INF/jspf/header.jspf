@@ -81,7 +81,7 @@
                     <ul class="nav navbar-nav navbar-right">
                     <!-- class="active" -->
                       <li><a href="/registro">Registrarse</a></li>
-                      <li><a href="/inicioSesion">Inicia Sesión</a></li>
+                      <li><a href="/login">Inicia Sesión</a></li>
                     </ul>
                   </div><!--/.nav-collapse -->
               </div><!--/.container-fluid -->

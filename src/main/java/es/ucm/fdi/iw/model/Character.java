@@ -3,6 +3,7 @@ package es.ucm.fdi.iw.model;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 
 /**
  * Personaje del juego, con el que se lucha
@@ -11,6 +12,7 @@ import javax.persistence.Id;
 
 @Entity
 public class Character {
+	
 	private long id;
 	private User owner;
 	private String name;
@@ -86,6 +88,8 @@ public class Character {
 	public void setArmor(int armor) {
 		this.armor = armor;
 	}
+	
+	@OneToOne(targetEntity=User.class)
 	public User getOwner() {
 		return owner;
 	}

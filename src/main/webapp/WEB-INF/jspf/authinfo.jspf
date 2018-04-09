@@ -9,7 +9,7 @@
 </sec:authorize>
 <sec:authorize access="isAuthenticated()">
 <div>
-	<p>Tu usuario es : <sec:authentication property="principal.username" />    
+	<p>Tu usuario es : <sec:authentication property="principal.username" />       
 	<p>Roles detectados: 
 	<sec:authorize access="hasRole('USER')">
 		hasRole('USER')

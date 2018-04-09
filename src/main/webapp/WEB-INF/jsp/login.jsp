@@ -6,16 +6,16 @@
 
 <%@ include file="../jspf/header.jspf"%>
 
-<div class="starter-template">
+<div class="form-signin">
 	<h1>Registro</h1>
 
     <form action="/login" method="post">               
         <fieldset>
             <legend>Please Login</legend>
-            <label for="username">Username</label>
-            <input type="text" id="username" name="username"/>        
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password"/>
+            <label for="username" class="sr-only"></label>
+            <input type="text" id="username" name="username" class="form-control" placeholder="Usuario" required autofocus/>        
+            <label for="password" class="sr-only"></label>
+            <input type="password" id="password" name="password"class="form-control" placeholder="Contraseña" required/>
             
             <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
             

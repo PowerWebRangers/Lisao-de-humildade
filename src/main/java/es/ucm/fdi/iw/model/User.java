@@ -7,32 +7,41 @@ import javax.persistence.Id;
 
 @Entity
 public class User {
-	private long Id;
+	private long id;
 	private String login;
+	private String password;
 	private String roles; // split by , to separate roles
 	private byte enabled;
-	private String password;
-	private String email;
-	private int money;
+	private int humildones;
 	private int elo;
 	
+	
+
 	@Id
 	@GeneratedValue
 	public long getId() {
-		return this.Id;
+	return id;
 	}
 	
-	public void setId(long newId) {
-		this.Id = newId;
-	}
+	public void setId(long id) {
+		this.id = id;
+	}	
 
-	
+	@Column(unique=true)
 	public String getLogin() {
 		return login;
 	}
 
 	public void setLogin(String login) {
 		this.login = login;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+	
+	public void setPassword(String password) {
+		this.password = password;
 	}
 
 	public String getRoles() {
@@ -50,29 +59,13 @@ public class User {
 	public void setEnabled(byte enabled) {
 		this.enabled = enabled;
 	}
-
-	public String getPassword() {
-		return password;
+	
+	public int getHumildones() {
+		return humildones;
 	}
 
-	public void setPassword(String password) {
-		this.password = password;
-	}
-
-	public String getEmail() {
-		return email;
-	}
-
-	public void setEmail(String email) {
-		this.email = email;
-	}
-
-	public int getMoney() {
-		return money;
-	}
-
-	public void setMoney(int money) {
-		this.money = money;
+	public void setHumildones(int humildones) {
+		this.humildones = humildones;
 	}
 
 	public int getElo() {
@@ -81,6 +74,6 @@ public class User {
 
 	public void setElo(int elo) {
 		this.elo = elo;
-	}	
+	}
 
 }
