@@ -5,6 +5,9 @@ import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 
 @Entity
@@ -25,7 +28,7 @@ public class Match {
 		this.id = id;
 	}
 	
-	@OneToOne(targetEntity=User.class)
+	@ManyToOne(targetEntity=User.class)
 	public User getPlayer1() {
 		return player1;
 	}
@@ -33,7 +36,7 @@ public class Match {
 		this.player1 = player1;
 	}
 	
-	@OneToOne(targetEntity=Character.class)
+	@ManyToOne(targetEntity=Character.class)
 	public Character getCharPlayer1() {
 		return charPlayer1;
 	}
@@ -41,7 +44,7 @@ public class Match {
 		this.charPlayer1 = charPlayer1;
 	}
 	
-	@OneToOne(targetEntity=User.class)
+	@ManyToOne(targetEntity=User.class)
 	public User getPlayer2() {
 		return player2;
 	}
@@ -49,7 +52,7 @@ public class Match {
 		this.player2 = player2;
 	}
 	
-	@OneToOne(targetEntity=Character.class)
+	@ManyToOne(targetEntity=Character.class)
 	public Character getCharPlayer2() {
 		return charPlayer2;
 	}

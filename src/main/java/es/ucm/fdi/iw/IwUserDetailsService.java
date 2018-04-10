@@ -25,8 +25,8 @@ public class IwUserDetailsService implements UserDetailsService {
 
     public UserDetails loadUserByUsername(String username){
     	try {
-	        User u = entityManager.createQuery("from User where login = :login", User.class)
-	                            .setParameter("login", username)
+	        User u = entityManager.createNamedQuery("userByLogin",User.class)
+	                            .setParameter("loginParam", username)
 	                            .getSingleResult();
 	        
 	        // build UserDetails object

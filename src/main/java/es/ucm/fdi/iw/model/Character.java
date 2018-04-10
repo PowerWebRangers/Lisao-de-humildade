@@ -1,9 +1,14 @@
 package es.ucm.fdi.iw.model;
 
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.OneToOne;
+import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+
 
 /**
  * Personaje del juego, con el que se lucha
@@ -16,6 +21,7 @@ public class Character {
 	private long id;
 	private User owner;
 	private String name;
+	private List<Match>matchs;
 	private int level;
 	private int experience;
 	private int healthPoints;
@@ -89,12 +95,20 @@ public class Character {
 		this.armor = armor;
 	}
 	
-	@OneToOne(targetEntity=User.class)
+	@ManyToOne(targetEntity=User.class)
 	public User getOwner() {
 		return owner;
 	}
 	public void setOwner(User owner) {
 		this.owner = owner;
+	}
+	
+	@OneToMany(targetEntity=Match.class)
+	public List<Match> getMatchs() {
+		return matchs;
+	}
+	public void setMatchs(List<Match> matchs) {
+		this.matchs = matchs;
 	}
 	
 
