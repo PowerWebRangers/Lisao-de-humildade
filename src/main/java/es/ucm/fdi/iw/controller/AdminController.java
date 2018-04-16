@@ -62,7 +62,8 @@ public class AdminController {
 	@RequestMapping(value = "/addUser", method = RequestMethod.POST)
 	@Transactional
 	public String addUser(
-			@RequestParam String login, 
+			@RequestParam String login,
+			//RequestParam("username") String usuario
 			@RequestParam String password, 
 			@RequestParam(required=false) String isAdmin, Model m) {
 		User u = new User();

@@ -9,6 +9,20 @@
 <div class="starter-template">
 	<h1>Home</h1>
 	<p class="lead">Bienvenido a casa</p>
+	<div class = "panel">
+	   	<table>
+			<thead>
+				<tr><th>id<th>login<th>roles</tr>
+			</thead>
+			<tbody>
+				<c:forEach items="${users}" var="u">
+					<tr>
+					<td>${u.id}<td>${u.login}<td>${u.roles}
+					</tr>	
+				</c:forEach>
+			</tbody>
+		</table>
+    </div>
 
 	<%@ include file="../jspf/authinfo.jspf"%>		
 </div>

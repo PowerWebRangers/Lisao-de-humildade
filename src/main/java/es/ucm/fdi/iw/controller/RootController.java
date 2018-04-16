@@ -32,7 +32,6 @@ public class RootController {
 	public String estadisticas() {   //  <--- nombre funcion da igual
 		return "estadisticas";    // <--- nombre de vista, sin .jsp
 	}
-	
 	@GetMapping("/inicio")   // <--- asocia URL con funcion
 	public String inicio() {   //  <--- nombre funcion da igual
 		return "inicio";    // <--- nombre de vista, sin .jsp
@@ -58,6 +57,7 @@ public class RootController {
 		return "crearPersonaje";    // <--- nombre de vista, sin .jsp
 	}
 	
+	
 	@GetMapping({"/", "/index"})
 	public String root(Model model, Principal principal) {
 		log.info(principal.getName() + " de tipo " + principal.getClass());		
@@ -67,7 +67,7 @@ public class RootController {
 	
 	@GetMapping("/login")
 	public String login() {
-		return "inicioSesion";
+		return "login";
 	}
 	
 	@GetMapping("/logout")
@@ -79,4 +79,5 @@ public class RootController {
 	public String upload() {
 		return "upload";
 	}
+	
 }

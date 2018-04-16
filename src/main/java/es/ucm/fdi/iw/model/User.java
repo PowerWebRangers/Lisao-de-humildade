@@ -12,9 +12,9 @@ public class User {
 	private String password;
 	private String roles; // split by , to separate roles
 	private byte enabled;
-	private int humildones;
-	private int elo;
-	
+	/*private int humildones;
+	//private int elo;
+	*/	
 	
 
 	@Id
@@ -59,7 +59,7 @@ public class User {
 	public void setEnabled(byte enabled) {
 		this.enabled = enabled;
 	}
-	
+	/*
 	public int getHumildones() {
 		return humildones;
 	}
@@ -74,6 +74,6 @@ public class User {
 
 	public void setElo(int elo) {
 		this.elo = elo;
-	}
+	}*/
 
 }

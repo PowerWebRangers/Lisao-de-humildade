@@ -8,7 +8,7 @@
 
 <div class= "container panel-overview borders">
 
-      <div class="page-header ">
+      <div class="pan ge-header ">
         <h1>Tienda</h1>
       </div>
           <div class="row placeholders">
