@@ -14,7 +14,8 @@ import javax.persistence.OneToMany;
 @NamedQueries({
 	@NamedQuery(name="userByLogin",
 	query="select u from User u where u.login = :loginParam")
-	})
+	}
+)
 
 @Entity
 public class User {
@@ -22,6 +23,7 @@ public class User {
 	private String login;
 	private String password;
 	private String roles; // split by , to separate roles
+	private String email;
 	private byte enabled;
 	private int humildones;
 	private int elo;
@@ -67,6 +69,14 @@ public class User {
 		this.roles = roles;
 	}
 
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
 	public byte getEnabled() {
 		return enabled;
 	}
@@ -91,7 +101,7 @@ public class User {
 		this.elo = elo;
 	}
 	
-	@OneToMany(targetEntity=User.class)
+	@OneToMany(targetEntity=User.class	)
 	public List<User> getFriends() {
 		return friends;
 	}

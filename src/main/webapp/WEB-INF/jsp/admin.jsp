@@ -12,7 +12,7 @@
 
 	<hr/>
 
-	<form action="/admin/addUser" method="post">
+	<form action="/addUser" method="post">
 		<label for="login">login<input name="login"/></label>
 		<label for="password">password<input type="password" name="password"/></label>
 		<label for="isAdmin">is admin?<input type="checkbox" name="isAdmin"></label>
@@ -27,12 +27,12 @@
 	
 	<table>
 	<thead>
-	<tr><th>id<th>login<th>roles</tr>
+	<tr><td>id<td>login<td>roles<td>humildones<td>ELO<td>email</tr>
 	</thead>
 	<tbody>
 	<c:forEach items="${users}" var="u">
 		<tr>
-		<td>${u.id}<td>${u.login}<td>${u.roles}
+		<td>${u.id}<td>${u.login}<td>${u.roles}<td>${u.humildones}<td>${u.elo}<td>${u.email}
 		</tr>	
 	</c:forEach>
 	</tbody>

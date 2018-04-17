@@ -63,17 +63,23 @@ public class AdminController {
 	@Transactional
 	public String addUser(
 			@RequestParam String login, 
-			@RequestParam String password, 
+			@RequestParam String password,
+			@RequestParam String email,
 			@RequestParam(required=false) String isAdmin, Model m) {
 		User u = new User();
 		u.setLogin(login);
 		u.setPassword(passwordEncoder.encode(password));
 		u.setRoles("on".equals(isAdmin) ? "ADMIN,USER" : "USER");
+		u.setEmail(email);
+		u.setElo(100);
+		u.setHumildones(800);
 		entityManager.persist(u);
 		
 		entityManager.flush();
 		m.addAttribute("users", entityManager
 				.createQuery("select u from User u").getResultList());
+		if(isAdmin.isEmpty())
+			return "login";
 		
 		return "admin";
 	}
@@ -127,4 +133,5 @@ public class AdminController {
             return "You failed to upload a photo for " + id + " because the file was empty.";
         }
 	}
+	
 }

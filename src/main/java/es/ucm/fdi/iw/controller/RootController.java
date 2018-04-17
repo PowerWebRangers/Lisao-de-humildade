@@ -2,14 +2,33 @@ package es.ucm.fdi.iw.controller;
 
 import java.security.Principal;
 
+import javax.persistence.EntityManager;
+
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import es.ucm.fdi.iw.LocalData;
+import es.ucm.fdi.iw.model.User;
 
 @Controller	
 public class RootController {
+	
+	
+	@Autowired
+	private PasswordEncoder passwordEncoder;
+	
+	@Autowired
+	private EntityManager entityManager;
+
 
 	private static Logger log = Logger.getLogger(RootController.class);
 	
@@ -79,4 +98,27 @@ public class RootController {
 	public String upload() {
 		return "upload";
 	}
+	
+	@RequestMapping(value = "/addUser", method = RequestMethod.GET)
+	@Transactional
+	public String addUser(
+			@RequestParam String login, 
+			@RequestParam String password,
+			@RequestParam String email,
+			@RequestParam(required=false) String isAdmin, Model m) {
+		User u = new User();
+		u.setLogin(login);
+		u.setPassword(passwordEncoder.encode(password));
+		u.setRoles("on".equals(isAdmin) ? "ADMIN,USER" : "USER");
+		u.setEmail(email);
+		u.setElo(100);
+		u.setHumildones(800);
+		entityManager.persist(u);
+		entityManager.flush();
+		m.addAttribute("users", entityManager
+				.createQuery("select u from User u").getResultList());
+		
+		return "inicio";
+	}
+	
 }
