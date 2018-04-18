@@ -1,5 +1,6 @@
 package es.ucm.fdi.iw.model;
 
+import java.util.Collection;
 import java.util.List;
 
 import javax.persistence.Column;
@@ -11,14 +12,21 @@ import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 
+import org.springframework.security.config.annotation.authentication.configurers.provisioning.UserDetailsManagerConfigurer.UserDetailsBuilder;
+import org.springframework.security.core.GrantedAuthority;
+
 @NamedQueries({
 	@NamedQuery(name="userByLogin",
 	query="select u from User u where u.login = :loginParam")
 	}
 )
 
+
 @Entity
 public class User {
+	
+	
+	
 	private long id;
 	private String login;
 	private String password;
@@ -29,6 +37,8 @@ public class User {
 	private int elo;
 	private List<User> friends;
 	private List<Match> matchs;
+	
+	
 	
 	
 	

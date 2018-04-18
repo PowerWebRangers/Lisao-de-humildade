@@ -16,9 +16,9 @@
 	<sec:authorize access="hasRole('USER')">
 		hasRole('USER')
 	</sec:authorize>
-		<sec:authorize access="hasRole('ADMIN')">
-			hasRole('ADMIN')
-		</sec:authorize>
+	<sec:authorize access="hasRole('ADMIN')">
+		hasRole('ADMIN')
+	</sec:authorize>
 	
 </div> 
 

@@ -99,7 +99,7 @@ public class RootController {
 		return "upload";
 	}
 	
-	@RequestMapping(value = "/addUser", method = RequestMethod.GET)
+	@RequestMapping(value = "/addUser", method = RequestMethod.POST)
 	@Transactional
 	public String addUser(
 			@RequestParam String login, 
@@ -113,12 +113,16 @@ public class RootController {
 		u.setEmail(email);
 		u.setElo(100);
 		u.setHumildones(800);
+		try {
 		entityManager.persist(u);
 		entityManager.flush();
 		m.addAttribute("users", entityManager
 				.createQuery("select u from User u").getResultList());
-		
-		return "inicio";
+		}catch(Exception e)
+		{
+			return "registro";
+		}
+		return "overview";
 	}
 	
 }

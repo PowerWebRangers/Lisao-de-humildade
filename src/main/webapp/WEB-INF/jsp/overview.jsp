@@ -5,16 +5,21 @@
 	uri="http://www.springframework.org/security/tags"%>
 
 <%@ include file="../jspf/header.jspf"%>
-
+<sec:authorize access="isAnonymous()">
+<div>
+	No estás registrado.
+</div>
+</sec:authorize>
+<sec:authorize access="isAuthenticated()">
  <div class="panel-overview borders container">
           <div class=""><!--PANEL BODY-->
             <h3>Información Usuario:</h3>
             <br>
               <img class="spriteCharacter" src="${s}/img/pruebaPsj.png" style="float:left; margin:10px;" >
               <br>
-              <h4>Nombre: Carlos</h4>
+              <h4><sec:authentication property="principal.username" /></h4>
               <br>
-              <h4>Nivel 26</h4>
+              <h4><sec:authentication property="principal.password" /> humildones</h4>
               
               <a href="/crearPersonaje" role="button"><button type="button" class="btn btn-success botonCreaPerfil">Crear Perfil</button></a>
               <br>
@@ -226,5 +231,6 @@
                 </div>
               </div>
             </div>
+            </sec:authorize>
             
 <%@ include file="../jspf/footer.jspf"%>

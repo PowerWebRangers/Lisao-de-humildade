@@ -10,7 +10,7 @@
 		<div class = "col-md-2"></div>
 		<div class = "col-md-6">
 			<div class = "borders panel">
-						<form class="form-signin" action="/addUser" method="get">
+						<form class="form-signin" action="/addUser" method="post">
 							<fieldset>
 						    <h2 class="form-signin-heading">Inicia Sesión</h2>
 						    <label for="login" class="sr-only">User</label>
@@ -19,12 +19,12 @@
 						    <input type="email" id="email" name="email" placeholder="Email" class="form-control"required/>
 						    <label for="password" class="sr-only">Contraseña</label>
 						    <input type="password" name="password"id="password" class="form-control" placeholder="Contraseña" required/>
-						    <label for="confirmpassword" class="sr-only">Confirmarcontraseña</label> 
+						    <label for="confirmpassword" class="sr-only"></label> 
 							<input type="password" name="confirmpassword" id="confirmpassword" class="form-control" placeholder="Confirmar contraseña" required/>
 						    <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
 						    <div class="form-actions">
              				<button type="submit" class="btn">Log in</button>
-					          </div>
+					          	</div>
 							</fieldset>
 					     </form>
 			</div>
